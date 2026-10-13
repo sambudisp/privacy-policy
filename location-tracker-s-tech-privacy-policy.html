@@ -25,7 +25,7 @@ accesses, how it is used, and how it is stored.</p>
   <li>The app records your device location only while you have started a tracking session.</li>
   <li>Location may be collected <strong>in the background</strong> (when the app is closed or not in use) while a tracking session is active.</li>
   <li>All location data is stored <strong>only on your device</strong>. It is not uploaded to our servers and is not sold or shared with anyone.</li>
-  <li>The app does not require an account and does not collect your name, email, contacts, or other personal identifiers.</li>
+  <li>The app does not require an account and does not collect your name, email, contacts, or other personal identifiers. The only data sent off your device is the technical data collected by the Google Maps SDK (see section 4).</li>
 </ul>
 
 <h2>2. Data the app accesses and why</h2>
@@ -56,7 +56,7 @@ accesses, how it is used, and how it is stored.</p>
 Location data never leaves your device through the app.</p>
 <p>The app uses the following third-party components provided by Google:</p>
 <ul>
-  <li><strong>Google Maps SDK for Android</strong> – to display map tiles for your route history. Google may receive technical data (such as IP address and the map area being displayed) to serve map tiles. See the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.</li>
+  <li><strong>Google Maps SDK for Android</strong> – to display map tiles for your route history. When the map is shown, the SDK automatically sends technical data to Google: IP address, device information (OS version, model, brand), a pseudonymous SDK identifier, map interaction events, and crash/diagnostic logs. This data is sent encrypted (HTTPS) and is used by Google to serve map tiles and to maintain and improve its services. Your recorded location history is not sent. See the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.</li>
   <li><strong>Firebase (Google)</strong> – used for app infrastructure. See <a href="https://firebase.google.com/support/privacy">Firebase Privacy and Security</a>.</li>
 </ul>
 
